@@ -44,20 +44,37 @@ input[type="submit"] {
     font-weight: bold;
 }
 
-p a [type="button"]{
-    width: 100%;
-    height: 40px;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    padding: 10px;
-    
-    background-color: #000000;
-    color: #ffffff;
-    font-weight: bold; 
+.tabela {
+  display: table;
+  margin: 0 auto;
+  width: 500px;
 }
 
-.tabela {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto 10px 10px;
+.tabela tr, tabela td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.tabela tr {
+  background-color: #ccc;
+}
+
+.tabela tr:nth-child(even) {
+  background-color: #eee;
+}
+
+.tabela td.id {
+  width: 100px;
+}
+
+.tabela td.nome {
+  width: 200px;
+}
+
+.tabela td.dia {
+  width: 100px;
+}
+
+.tabela td.mes {
+  width: 100px;
 }
