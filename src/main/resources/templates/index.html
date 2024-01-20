@@ -12,7 +12,7 @@
         </header>
         <main>
             <p>
-                Esta é uma página com uma imagem centralizada ao topo logo a baixo uma descrição e abaixo um formulário.
+                Cadastre os aniversariantes e suas datas, podendo assim lembrar e parabenizar a todos que você Ama.
             </p>
             
             <form th:action="@{gravar}" th:object="${aniversariante}" method="post">
@@ -22,7 +22,7 @@
                 <p><input type="number" name="dia" placeholder="Dia"></p>
                 <p><input type="number" name="mes" placeholder="Mes"></p>
                 <p ><input type="submit" value="Cadastrar">  
-                <p><a th:href="@{/listagem}"><button type="button" class="btn btn-dark"> Listar Aniversariantes</button></a></p>          
+                <p><a th:href="@{/listagem}"><button id="btnlist" type="button" class="btn btn-dark"> Listar Aniversariantes</button></a></p>          
             </form>
                   
         </main>
