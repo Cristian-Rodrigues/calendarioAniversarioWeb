@@ -27,10 +27,10 @@
                 </thead>
                 <tbody> 
                         <tr th:each="aniversariante : ${lista}"> 
-                            <td th:number="${aniversariante.id}"></td> 
+                            <td th:text="${aniversariante.id}"></td> 
                             <td th:text="${aniversariante.nome}"></td> 
-                        <td th:number="${aniversariante.dia}"></td> 
-                        <td th:number="${aniversariante.mes}"></td>  
+                        <td th:text="${aniversariante.dia}"></td> 
+                        <td th:text="${aniversariante.mes}"></td>  
                         </tr> 
                 </tbody>             
 
